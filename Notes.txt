@@ -1,0 +1,40 @@
+NPM MANAGEMENT
+_______________________________________
+
+
+
+One of the biggest reasons to use a package manager, is their powerful dependency management. Instead of manually having to make sure that you get all dependencies whenever you set up a project on a new computer, npm automatically installs everything for you. But how can npm know exactly what your project needs? Meet the dependencies section of your package.json file.
+
+Packages your project requires are stored using the following format:
+
+"dependencies": {
+  "package-name": "version",
+  "express": "4.14.0"
+}
+
+
+Dependencies can have a tilda (~) or caret(^) at the start of the version number. See express dependency's version
+   number in package.json.
+   In the simplest terms, the tilde matches the most recent minor version (the middle number).
+      ~1.2.3 will match all 1.2.x versions but will miss 1.3.0.
+   The caret will update you to the most recent major version (the first number). ^1.2.3 will match any 1.x.x release
+      including 1.3.0, but will hold off on 2.0.0.
+
+
+
+Versions of the npm packages in the dependencies section of your package.json file
+     follow what’s called Semantic Versioning (SemVer).  Knowing SemVer can be useful
+     when you develop software that uses external dependencies (which you almost always do).
+  Format:
+    "package": "MAJOR.MINOR.PATCH"
+The MAJOR version should increment when you make incompatible API changes. The MINOR version
+  should increment when you add functionality in a backwards-compatible manner. The PATCH
+  version should increment when you make backwards-compatible bug fixes. This means that
+  PATCHes are bug fixes and MINORs add new features but neither of them break what worked before.
+  Finally, MAJORs add changes that won’t work with earlier versions.
+
+  To allow an npm dependency to update to the latest PATCH version, you can prefix the dependency’s version with the tilde (~) character
+  The caret(^) prefix will allow both MINOR updates and PATCHes.
+
+To remove a dependency, just delete the key value pair in package.json
+

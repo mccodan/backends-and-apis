@@ -2,10 +2,12 @@
 	"name": "fcc-learn-npm-package-json",
 	"author": "Cole McCain",
 	"description": "This is a project with freeCodeCamp",
-  "keywords": [ "funny", "silly", "outdated"],
+  "keywords": [ "funny", "silly", "freecodecamp"],
 	"dependencies": {
 		"express": "^4.14.0"
 	},
+  "license": "MIT",
+  "version": "1.0.0",
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js"
