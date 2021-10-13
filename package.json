@@ -1,15 +1,17 @@
 {
 	"name": "fcc-learn-npm-package-json",
+	"author": "Cole McCain",
+	"description": "This is a project with freeCodeCamp",
+  "keywords": [ "funny", "silly", "outdated"],
 	"dependencies": {
 		"express": "^4.14.0"
 	},
-	"author": "Cole McCain",
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/mccodan/backends-and-apis.git"
+		"url": "https://idontknow/todo.git"
 	}
 }
